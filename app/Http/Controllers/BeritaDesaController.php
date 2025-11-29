@@ -65,7 +65,7 @@ class BeritaDesaController extends Controller
 
         $berita->update($validated);
 
-        return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui.');
+        return redirect()->route('berita')->with('success', 'Berita berhasil diperbarui.');
     }
 
     public function destroy($id)

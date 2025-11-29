@@ -10,6 +10,7 @@ class BeritaDesa extends Model
     use HasFactory;
 
     protected $table = 'berita_desa';
+    protected $primaryKey = 'id_berita_desa';
 
     public $timestamps = false; 
 

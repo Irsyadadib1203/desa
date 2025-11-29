@@ -29,7 +29,7 @@
               <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">Login</h1>
 
               @if ($errors->any())
-                <div class="mb-4 text-sm text-red-600 bg-red-100 border border-red-300 rounded-lg p-2">
+                <div class="mb-4 text-sm text-blue-600 bg-blue-100 border border-blue-300 rounded-lg p-2">
                   {{ $errors->first() }}
                 </div>
               @endif
@@ -42,8 +42,8 @@
                   <input
                     name="username"
                     value="{{ old('username') }}"
-                    required
-                    class="block w-full mt-1 text-sm border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input"
+                    requiblue
+                    class="block w-full mt-1 text-sm border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue form-input"
                     placeholder="Masukkan username"
                   />
                 </label>
@@ -53,15 +53,15 @@
                   <input
                     type="password"
                     name="password"
-                    required
-                    class="block w-full mt-1 text-sm border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input"
+                    requiblue
+                    class="block w-full mt-1 text-sm border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue form-input"
                     placeholder="**********"
                   />
                 </label>
 
                 <button
                   type="submit"
-                  class="block w-full px-4 py-2 mt-6 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 rounded-lg active:bg-purple-700 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                  class="block w-full px-4 py-2 mt-6 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 rounded-lg active:bg-blue-700 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
                 >
                   Masuk
                 </button>

@@ -13,28 +13,28 @@
     <div class="mb-4">
       <label class="block text-sm">
         <span class="text-gray-700 dark:text-gray-400">Nama Pengguna</span>
-        <input type="text" name="nm_pengguna" class="block w-full mt-1 text-sm form-input" required />
+        <input type="text" name="nm_pengguna" class="block w-full mt-1 text-sm form-input" requiblue />
       </label>
     </div>
 
     <div class="mb-4">
       <label class="block text-sm">
         <span class="text-gray-700 dark:text-gray-400">Username</span>
-        <input type="text" name="username" class="block w-full mt-1 text-sm form-input" required />
+        <input type="text" name="username" class="block w-full mt-1 text-sm form-input" requiblue />
       </label>
     </div>
 
     <div class="mb-4">
       <label class="block text-sm">
         <span class="text-gray-700 dark:text-gray-400">Password</span>
-        <input type="password" name="password" class="block w-full mt-1 text-sm form-input" required />
+        <input type="password" name="password" class="block w-full mt-1 text-sm form-input" requiblue />
       </label>
     </div>
 
     <div class="mb-4">
       <label class="block text-sm">
         <span class="text-gray-700 dark:text-gray-400">Role</span>
-        <select name="role" class="block w-full mt-1 text-sm form-select" required>
+        <select name="role" class="block w-full mt-1 text-sm form-select" requiblue>
           <option value="admin">Admin</option>
           <option value="superadmin">Superadmin</option>
         </select>
@@ -44,7 +44,7 @@
     <div class="mb-4">
       <label class="block text-sm">
         <span class="text-gray-700 dark:text-gray-400">Status</span>
-        <select name="status" class="block w-full mt-1 text-sm form-select" required>
+        <select name="status" class="block w-full mt-1 text-sm form-select" requiblue>
           <option value="aktif">Aktif</option>
           <option value="nonaktif">Nonaktif</option>
         </select>
@@ -53,7 +53,7 @@
 
     <div class="flex justify-end">
       <button type="submit"
-        class="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded hover:bg-purple-700">
+        class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700">
         Simpan
       </button>
     </div>

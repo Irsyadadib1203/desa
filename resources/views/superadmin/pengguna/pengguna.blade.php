@@ -11,7 +11,7 @@
       </h2>
       <a
         href="{{ route('pengguna.tambah') }}"
-        class="flex items-center px-4 py-2 text-sm font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple transition"
+        class="flex items-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue transition"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
@@ -58,7 +58,7 @@
                 <td class="px-4 py-3 text-xs">
                   <span
                     class="px-2 py-1 font-semibold leading-tight rounded-full
-                      {{ $item->status == 'aktif' ? 'text-green-700 bg-green-100 dark:bg-green-700 dark:text-green-100' : 'text-red-700 bg-red-100 dark:bg-red-700 dark:text-red-100' }}">
+                      {{ $item->status == 'aktif' ? 'text-green-700 bg-green-100 dark:bg-green-700 dark:text-green-100' : 'text-blue-700 bg-blue-100 dark:bg-blue-700 dark:text-blue-100' }}">
                     {{ ucfirst($item->status) }}
                   </span>
                 </td>
@@ -67,7 +67,7 @@
                     <!-- Tombol Edit -->
                     <button 
                       @click="openEditModal({{ $item->id_pengguna }}, '{{ $item->nm_pengguna }}', '{{ $item->username }}', '{{ $item->role }}', '{{ $item->status }}')" 
-                      class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
+                      class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-blue-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                       title="Edit Pengguna">
                        <svg
                               class="w-5 h-5"
@@ -83,7 +83,7 @@
                     <!-- Tombol Hapus -->
                     <button 
                       @click="openDeleteModal({{ $item->id_pengguna }}, '{{ $item->nm_pengguna }}')" 
-                      class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
+                      class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-blue-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                       title="Hapus Pengguna">
                      <svg
                               class="w-5 h-5"
@@ -145,20 +145,20 @@
       <div class="space-y-1">
         <label class="block text-sm font-medium text-gray-600 dark:text-gray-300">Nama Pengguna</label>
         <input type="text" name="nm_pengguna" x-model="pengguna.nm_pengguna"
-               class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none dark:bg-gray-700 dark:text-gray-100">
+               class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-gray-100">
       </div>
 
       <div class="space-y-1">
         <label class="block text-sm font-medium text-gray-600 dark:text-gray-300">Username</label>
         <input type="text" name="username" x-model="pengguna.username"
-               class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none dark:bg-gray-700 dark:text-gray-100">
+               class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-gray-100">
       </div>
 
       <div class="flex space-x-3">
         <div class="w-1/2 space-y-1">
           <label class="block text-sm font-medium text-gray-600 dark:text-gray-300">Role</label>
           <select name="role" x-model="pengguna.role"
-                  class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-gray-100 focus:ring-2 focus:ring-purple-500">
+                  class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-gray-100 focus:ring-2 focus:ring-blue-500">
             <option value="admin">Admin</option>
             <option value="superadmin">Superadmin</option>
           </select>
@@ -166,7 +166,7 @@
         <div class="w-1/2 space-y-1">
           <label class="block text-sm font-medium text-gray-600 dark:text-gray-300">Status</label>
           <select name="status" x-model="pengguna.status"
-                  class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-gray-100 focus:ring-2 focus:ring-purple-500">
+                  class="w-full p-2.5 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-gray-100 focus:ring-2 focus:ring-blue-500">
             <option value="aktif">Aktif</option>
             <option value="nonaktif">Nonaktif</option>
           </select>
@@ -180,7 +180,7 @@
           Batal
         </button>
         <button type="submit"
-                class="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-2 focus:ring-purple-500">
+                class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500">
           Simpan
         </button>
       </div>
@@ -204,7 +204,7 @@
 
     <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
       Apakah kamu yakin ingin menghapus pengguna 
-      <span class="font-semibold text-red-600" x-text="pengguna.nm_pengguna"></span>?
+      <span class="font-semibold text-blue-600" x-text="pengguna.nm_pengguna"></span>?
     </p>
 
     <div class="h-4"></div>
@@ -219,7 +219,7 @@
       </button>
 
       <button type="submit"
-              class="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-2 focus:ring-red-500 transition">
+              class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 transition">
         Hapus
       </button>
     </form>
